@@ -1,0 +1,19 @@
+{
+  "name": "Python 3.11 & Postgres 15",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",        // Python 자동완성
+        "ms-python.vscode-pylance",  // 지능형 코드 분석
+        "ckotzb.postgresql"        // VS Code에서 DB 바로 보기
+      ],
+      "settings": {
+        "python.analysis.autoImportCompletions": true
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}

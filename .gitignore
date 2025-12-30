@@ -1,0 +1,10 @@
+# Python 관련
+__pycache__/
+*.py[cod]
+.venv/
+
+# Docker/DB 관련 (실제 데이터는 올리지 않음)
+postgres_data/
+
+# VS Code 관련
+.vscode/
