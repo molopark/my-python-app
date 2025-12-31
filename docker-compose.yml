@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   # Python 개발 환경 (Dev Container)
   app:
@@ -6,11 +7,13 @@ services:
       context: .
       dockerfile: .devcontainer/Dockerfile
     volumes:
-      - ..:/workspace:cached
+      - .:/workspace:cached
     # 컨테이너끼리 'localhost'로 통신할 수 있게 설정 (매우 편리함)
     network_mode: service:db 
     depends_on:
       - db
+    tty: true           # 터미널 유지
+    stdin_open: true    # 표준 입력 유지
 
   # 데이터베이스: 이미 보유한 15 버전 이미지 사용
   db:
@@ -20,11 +23,8 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydatabase
+      POSTGRES_DB: mydb
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
+      - ./postgres_data:/var/lib/postgresql/data

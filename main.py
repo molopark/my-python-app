@@ -5,7 +5,7 @@ def run_example():
     try:
         # DB 연결 (docker-compose의 network_mode 덕분에 localhost 사용 가능)
         conn = psycopg2.connect(
-            host="localhost", database="mydatabase", 
+            host="localhost", database="mydb", 
             user="user", password="password"
         )
         cur = conn.cursor()
