@@ -19,12 +19,14 @@
         "ms-python.vscode-pylance",  // 지능형 코드 분석
         "ckotzb.postgresql",        // VS Code에서 DB 바로 보기
         "GoogleCloud.cloudcode", // Gemini Code Assist가 포함된 확장
+        "google.geminicodeassist",
         "vscjava.vscode-java-pack"
         // "vmware.vscode-spring-boot"
       ],
       "settings": {
         "python.analysis.autoImportCompletions": true,
-        "cloudcode.gemini.enable": true
+        "cloudcode.gemini.enable": true,
+        "cloudcode.features.gemini": true
       }
     }
   },
