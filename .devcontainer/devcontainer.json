@@ -1,5 +1,8 @@
 {
   "name": "Python 3.11 & Postgres 15",
+  "containerEnv": {
+    "TZ": "Asia/Seoul"
+  },
   "dockerComposeFile": "../docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
@@ -8,10 +11,13 @@
       "extensions": [
         "ms-python.python",        // Python 자동완성
         "ms-python.vscode-pylance",  // 지능형 코드 분석
-        "ckotzb.postgresql"        // VS Code에서 DB 바로 보기
+        "ckotzb.postgresql",        // VS Code에서 DB 바로 보기
+        "GoogleCloud.cloudcode", // Gemini Code Assist가 포함된 확장
+        "vscjava.vscode-java-pack"
       ],
       "settings": {
-        "python.analysis.autoImportCompletions": true
+        "python.analysis.autoImportCompletions": true,
+        "cloudcode.gemini.enable": true
       }
     }
   },

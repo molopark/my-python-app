@@ -18,7 +18,7 @@ services:
   # 데이터베이스: 이미 보유한 15 버전 이미지 사용
   db:
     image: postgres:15
-    container_name: python-db-15
+    container_name: my-custom-db
     restart: always
     environment:
       POSTGRES_USER: user
