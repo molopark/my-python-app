@@ -1,11 +1,12 @@
+import os
 import psycopg2
 from datetime import datetime
 
 def run_example():
     try:
-        # DB 연결 (docker-compose의 network_mode 덕분에 localhost 사용 가능)
+        # DB 연결 (환경변수 DB_HOST가 없으면 localhost 사용)
         conn = psycopg2.connect(
-            host="localhost", database="mydb",
+            host=os.getenv("DB_HOST", "localhost"), database="mydb",
             user="user", password="password"
         )
         cur = conn.cursor()
