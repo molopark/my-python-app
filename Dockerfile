@@ -19,4 +19,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # 6. 실행 권한 부여 및 사용자 설정 (선택 사항이나 권장)
-# CMD ["python", "main.py"]
+CMD ["python", "src/main.py"]
