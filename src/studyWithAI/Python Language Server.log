@@ -1,0 +1,43 @@
+2026-01-14 15:05:11.284 [info] Client: Pylance client (2025.10.4) started with python extension (2026.0.0)
+2026-01-14 15:05:13.147 [info] (18476): Server root directory: file:///c%3A/Users/molo/OneDrive/Desktop/molo/VSCode-win32-x64-1.107.1/data/extensions/ms-python.vscode-pylance-2025.10.4/dist
+2026-01-14 15:05:13.148 [info] (18476): Pylance language server 2025.10.4 (pyright version 1.1.407, commit 906e40aa) starting
+2026-01-14 15:05:13.156 [info] (18476): Starting service instance "my-python-app" for workspace "c:\dev\my-python-app"
+2026-01-14 15:05:16.934 [info] (18476): Loading background bundle file:///c%3A/Users/molo/OneDrive/Desktop/molo/VSCode-win32-x64-1.107.1/data/extensions/ms-python.vscode-pylance-2025.10.4/dist/copilot-background.bundle.js into file:///c%3A/dev/my-python-app...
+2026-01-14 15:05:17.051 [info] (18476): FG(my-python-app): Setting environmentName for service "my-python-app": "3.11.9 (.venv venv)"
+2026-01-14 15:05:17.051 [info] (18476): FG(my-python-app): Setting pythonPath for service "my-python-app": "C:\dev\my-python-app\.venv\Scripts\python.exe"
+2026-01-14 15:05:17.052 [info] (18476): FG(my-python-app): No include entries specified; assuming c:\dev\my-python-app
+2026-01-14 15:05:17.053 [info] (18476): FG(my-python-app): Auto-excluding **/node_modules
+2026-01-14 15:05:17.053 [info] (18476): FG(my-python-app): Auto-excluding **/__pycache__
+2026-01-14 15:05:17.053 [info] (18476): FG(my-python-app): Auto-excluding **/.*
+2026-01-14 15:05:17.434 [info] (18476): FG(my-python-app): Assuming Python version 3.11.9.final.0
+2026-01-14 15:05:17.979 [info] (18476): PQ(my-python-app): Priority queue background worker(2) root directory: file:///c%3A/Users/molo/OneDrive/Desktop/molo/VSCode-win32-x64-1.107.1/data/extensions/ms-python.vscode-pylance-2025.10.4/dist
+2026-01-14 15:05:17.980 [info] (18476): PQ(my-python-app): Priority queue background worker(2) started
+2026-01-14 15:05:17.980 [info] (18476): Settings have not changed. Skipping update.
+2026-01-14 15:05:17.982 [info] (18476): Starting Mcp server id:4467 ...
+2026-01-14 15:05:18.076 [info] (18476): FG(my-python-app): Found 2 source files
+2026-01-14 15:05:18.141 [info] (18476): BG(my-python-app): Loaded external background bundle file:///c%3A/Users/molo/OneDrive/Desktop/molo/VSCode-win32-x64-1.107.1/data/extensions/ms-python.vscode-pylance-2025.10.4/dist/copilot-background.bundle.js. 
+2026-01-14 15:08:04.304 [info] (18476): FG(my-python-app): Found 3 source files
+2026-01-14 15:08:30.445 [info] (18476): FG(my-python-app): Found 4 source files
+2026-01-14 15:08:32.925 [info] (18476): Settings have not changed. Skipping update.
+2026-01-14 15:09:35.023 [info] (18476): IDX(my-python-app): Indexer background runner(3) root directory: file:///c%3A/Users/molo/OneDrive/Desktop/molo/VSCode-win32-x64-1.107.1/data/extensions/ms-python.vscode-pylance-2025.10.4/dist (index)
+2026-01-14 15:09:35.023 [info] (18476): IDX(my-python-app): Indexing(3) started
+2026-01-14 15:09:36.231 [info] (18476): IDX(my-python-app): scanned(3) 20 files over 1 exec env
+2026-01-14 15:09:36.382 [info] (18476): IDX(my-python-app): indexed(3) 20 files over 1 exec env
+2026-01-14 15:09:36.395 [info] (18476): IDX(my-python-app): Indexing finished(3).
+2026-01-14 15:10:05.952 [info] (18476): FG(my-python-app): Found 3 source files
+2026-01-14 15:10:12.565 [info] (18476): FG(my-python-app): Found 2 source files
+2026-01-14 15:15:52.624 [info] (18476): FG(my-python-app): Found 3 source files
+2026-01-14 15:16:06.688 [info] (18476): Starting service instance "<default>" for workspace ""
+2026-01-14 15:16:06.689 [info] (18476): Loading background bundle file:///c%3A/Users/molo/OneDrive/Desktop/molo/VSCode-win32-x64-1.107.1/data/extensions/ms-python.vscode-pylance-2025.10.4/dist/copilot-background.bundle.js into ...
+2026-01-14 15:16:06.917 [info] (18476): FG(<default>): Setting environmentName for service "<default>": "3.11.9 (.venv venv)"
+2026-01-14 15:16:06.917 [info] (18476): FG(<default>): Setting pythonPath for service "<default>": "c:\dev\my-python-app\.venv\Scripts\python.exe"
+2026-01-14 15:16:06.918 [info] (18476): FG(<default>): No include entries specified; assuming \<default workspace root>
+2026-01-14 15:16:06.918 [info] (18476): FG(<default>): Auto-excluding **/node_modules
+2026-01-14 15:16:06.918 [info] (18476): FG(<default>): Auto-excluding **/__pycache__
+2026-01-14 15:16:06.918 [info] (18476): FG(<default>): Auto-excluding **/.*
+2026-01-14 15:16:07.161 [info] (18476): FG(<default>): Assuming Python version 3.11.9.final.0
+2026-01-14 15:16:07.619 [info] (18476): BG(<default>): Loaded external background bundle file:///c%3A/Users/molo/OneDrive/Desktop/molo/VSCode-win32-x64-1.107.1/data/extensions/ms-python.vscode-pylance-2025.10.4/dist/copilot-background.bundle.js. 
+2026-01-14 15:16:07.619 [info] (18476): PQ(<default>): Priority queue background worker(5) root directory: file:///c%3A/Users/molo/OneDrive/Desktop/molo/VSCode-win32-x64-1.107.1/data/extensions/ms-python.vscode-pylance-2025.10.4/dist
+2026-01-14 15:16:07.619 [info] (18476): PQ(<default>): Priority queue background worker(5) started
+2026-01-14 15:16:07.621 [error] (18476): FG(<default>): File or directory "\<default workspace root>" does not exist.
+2026-01-14 15:16:07.621 [info] (18476): FG(<default>): No source files found.
