@@ -16,3 +16,7 @@ Python
 ## docker
 - file : docker-compose.yml
 - 명령어 : doccker compose down , docker compose up -d
+
+## flask web 서버
+- 실행 : python src/flaskServer.py
+- 브라우저 : 127.0.0.1:8000
