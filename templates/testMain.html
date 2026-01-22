@@ -7,20 +7,28 @@
 <body>
     <h1>javascript test 화면입니다.</h1>
     <p>화면은 외부 HTML 파일에서 읽어온 내용입니다.</p>
+    <p id="mark1"></p>
+    <p id="mark2"></p>
 </body>
 <script>
     function datachk(str){
-        alert(str);
+        var chkResult = str + ", ";
         if(str == null){
-            alert('valid error');
-            return false;
+            chkResult = chkResult + 'valid error';
         }else{
-            alert('valid success');
-            return true;
+            chkResult = chkResult + 'valid success';
         }
+        document.getElementById('mark1').innerHTML = chkResult;
     }
     datachk('test');
-    datachk(null);
-    datachk();
+
+    const jsonStr = '{"id": 1, "status": "UP", "checks": ["Disk", "Memory"]}';
+    function jsonAnalysis(jsonStr){
+        var chkResult = "";
+        const json = JSON.parse(jsonStr);
+        chkResult =  "id: " +json.id + ", status: " +json.status + ", checks: " +json.checks[1];
+        document.getElementById('mark2').innerHTML = chkResult;
+    }
+    jsonAnalysis(jsonStr);
 </script>
 </html>
