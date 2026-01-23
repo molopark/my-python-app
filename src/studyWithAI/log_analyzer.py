@@ -1,5 +1,6 @@
 import os
 from googletrans import Translator
+import asyncio
 
 # Initialize the Google Translator object
 # 구글 번역기 객체를 초기화합니다.
@@ -9,7 +10,7 @@ translator = Translator()
 # 로그 파일에서 검색할 키워드 목록을 정의합니다. (Case-insensitive: 대소문자 구분 없음)
 target_keywords = ["error", "warning", "unsatisfied", "failed"]
 
-def analyze_logs(file_path):
+async def analyze_logs(file_path):
     # Extract the file name from the full path for display
     # 출력을 위해 전체 경로에서 파일 이름만 추출합니다.
     print(f"--- Analyzing Log File: {os.path.basename(file_path)} ---")
@@ -30,7 +31,8 @@ def analyze_logs(file_path):
                     
                     # Translate the original text to Korean (dest="ko")
                     # 원문 텍스트를 한국어로 번역합니다.
-                    translated_text = translator.translate(original_text, dest="ko").text
+                    translated_obj = await translator.translate(original_text, dest="ko")
+                    translated_text = translated_obj.text
                     
                     print(f"[{line_number}] 원본:{original_text}")
                     print(f"     번역:{translated_text}")
@@ -52,4 +54,4 @@ user_input = input("Please enter the full path of the log file: ")
 
 # Execute the function with the provided input
 # 제공된 입력값으로 함수를 실행합니다.
-analyze_logs(user_input)
+asyncio.run(analyze_logs(user_input))
